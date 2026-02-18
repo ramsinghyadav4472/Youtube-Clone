@@ -14,7 +14,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="flex justify-between items-center p-4 bg-gray-900 sticky top-0 z-50">
+        <nav className="flex items-center p-4 bg-gray-900 sticky top-0 z-50 relative">
             <Link to="/" className="flex items-center">
                 <img
                     src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"
@@ -27,7 +27,7 @@ export default function Navbar() {
 
             <form
                 onSubmit={handleSubmit}
-                className="bg-white rounded-full flex items-center px-4 py-1 w-full max-w-md ml-4"
+                className="bg-white rounded-full flex items-center px-4 py-1 w-full max-w-md absolute left-1/2 -translate-x-1/2"
             >
                 <input
                     className="bg-transparent border-none outline-none w-full text-black"
