@@ -6,7 +6,7 @@ export default function VideoCard({ video }) {
     return (
         <div
             className="flex flex-col gap-2 cursor-pointer group"
-            onClick={() => navigate(`/watch/${video.id}`)}
+            onClick={() => navigate(`/watch/${video.id}`, { state: video })}
         >
             <div className="overflow-hidden rounded-xl relative">
                 <img
